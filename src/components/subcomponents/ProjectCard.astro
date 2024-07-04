@@ -1,0 +1,75 @@
+---
+import Tag from "./Tag.astro"
+const {name, description, agency, agencyUrl, skills, url} = Astro.props;
+
+---
+
+<div class="project-card">
+    <h3 class="project-card--title">{name}</h3>
+    <p class="project-card--description">{description}</p>
+    <a href={agencyUrl} class="project-card--agency">{agency}</a>
+    <div class="skills">
+        {
+            skills.map((skill, index) => (
+                <Tag skill={skill} key={index} />
+            ))
+        }
+    </div>
+    <span class="project-url">
+        <a href={url}>Ir al sitio</a>
+        <span>
+            <img src="/public/arrow-up-right.svg" alt="">
+        </span>
+    </span>
+</div>
+
+<style>
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        border: 1px solid var(--light-gray);
+        padding: 16px;
+        border-radius: 8px;
+    }
+
+    .skills {
+        display: flex;
+        gap: 8px;
+    }
+
+    .project-url {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .project-url a{
+        color: var(--title);
+        font-weight: 600;
+        font-size: 1rem; 
+        text-decoration: underline
+    }
+
+    .project-card--title {
+        font-size: 1rem;
+    }
+
+    .project-card--description {
+        font-size: 0.875rem;
+        color: var(--description);
+    }
+
+    .project-card--agency {
+        font-size: 0.75rem;
+        font-weight: 600; 
+        transition: 300ms;
+    }
+
+    .project-card--agency:hover {
+        color: var(--accent-dark)
+    }
+    
+
+</style>

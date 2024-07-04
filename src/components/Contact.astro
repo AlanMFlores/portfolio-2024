@@ -1,0 +1,29 @@
+---
+import ContactButton from "./subcomponents/ContactButton.astro"
+---
+
+<section class="contact">
+    <h2 class="contact-title">Contacto</h2>
+    <div class="contact-buttons">
+        <ContactButton type={"solid"} icon={"envelope"} link={"#"}/>
+        <ContactButton type={"solid"} icon={"phone"} link={"#"}/>
+        <ContactButton type={"brands"} icon={"github"} link={"#"}/>
+        <ContactButton type={"brands"} icon={"linkedin"} link={"#"}/>
+    </div>
+</section>
+
+<style>
+    .contact {
+        margin-top: 32px;
+    }
+
+    .contact-title {
+        margin-bottom: 16px;
+    }
+
+    .contact-buttons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+</style>

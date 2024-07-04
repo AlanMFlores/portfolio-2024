@@ -1,0 +1,67 @@
+---
+import {education} from '@cv';
+import EducationItem from './subcomponents/EducationItem.astro';
+---
+
+<section class="education">
+    <h2 class="education-title">Formación académica</h2>
+    <div class="education-container">
+        {
+            education.map(({institution, endDate, startDate, area}) => (
+                <EducationItem institution={institution} endDate={endDate} startDate={startDate} area={area} />
+            ))
+        }
+    </div>
+    <h2 class="education-subtitle">Idiomas</h2>
+    <div class="language-container">
+        <div class="language-container--es">
+            <p class="language">Español</p>
+            <p>-</p>
+            <p>Nativo</p>
+        </div>
+        <div class="language-container--en">
+            <p class="language">Inglés</p>
+            <p>-</p>
+            <p>B1 (MCER)</p>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .education {
+        margin-top: 32px;
+    }
+
+    .education-title {
+        margin-bottom: 16px;
+    }
+
+    .education-subtitle {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .education-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .language-container {
+        display: flex;
+        gap: 16px;
+        
+    }
+
+    .language-container--en, .language-container--es {
+        display: flex;
+        gap: 8px;
+    } 
+
+    .language {
+        color: var(--accent);
+        font-weight: 600;
+    }
+
+</style>

@@ -1,0 +1,56 @@
+---
+import {basics} from '@cv';
+import ContactButton from './subcomponents/ContactButton.astro';
+
+const {name, label, image} = basics;
+
+---
+
+<header class="header">
+    <div class="header-left">
+        <div class="header-left--info">
+            <h1 class="header-title">{name}</h1>
+            <p class="header-subtitle">{label}</p>
+        </div>
+        <div class="contact-buttons">
+            <ContactButton type={"solid"} icon={"envelope"} link={"#"}/>
+            <ContactButton type={"solid"} icon={"phone"} link={"#"}/>
+            <ContactButton type={"brands"} icon={"github"} link={"#"}/>
+            <ContactButton type={"brands"} icon={"linkedin"} link={"#"}/>
+        </div>
+    </div>
+    <figure>
+        <img src={image} alt="profile image">
+    </figure>
+</header>
+
+<style>
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contact-buttons {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column
+    }
+
+    .header-left--info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 16px;
+    }
+
+    .header-left--info h1 {
+        margin-bottom: 0;
+    }
+
+</style>

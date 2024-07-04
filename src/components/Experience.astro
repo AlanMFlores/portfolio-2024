@@ -1,0 +1,34 @@
+---
+import ExperienceItem from "./subcomponents/ExperienceItem.astro"
+
+import {work} from '@cv';
+
+---
+
+<section class="experience">
+    <h3 class="experience-title">Experiencia laboral</h3>
+    <div class="experience-container">
+        {
+         work.map(({name, position, startDate, endDate, url}) => (
+             <ExperienceItem name={name} position={position} startDate={startDate} endDate={endDate} url={url}/>
+         ))   
+        }
+    </div>
+</section>
+
+<style>
+    .experience {
+        margin-top: 32px;
+    }
+
+    .experience-title {
+        margin-bottom: 16px;
+    }
+
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+</style>

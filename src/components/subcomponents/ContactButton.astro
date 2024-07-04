@@ -1,0 +1,31 @@
+---
+
+const {type, icon, link} = Astro.props;
+
+---
+
+<a href={link} class="contact-button">
+    <i class=`fa-${type} fa-${icon}`></i>
+</a>
+
+<style>
+    .contact-button {
+        color: var(--light-gray);
+        display: block;
+        border: 0.5px solid var(--light-gray);
+        padding: 0px 8px;
+        border-radius: 4px;
+        transition: 300ms;
+    }
+
+    .contact-button:hover {
+        color: var(--accent);
+        border: 0.5px solid var(--accent);
+    }
+
+    .contact-button i {
+        font-size: 16px;
+    }
+
+
+</style>

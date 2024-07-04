@@ -1,0 +1,34 @@
+---
+import ProjectCard from "./subcomponents/ProjectCard.astro"
+import {projects} from "@cv";
+
+---
+
+<section class="projects">
+    <h2 class="projects-title">Proyectos</h2>
+    <div class="projects-grid">
+        {
+            projects.map(({name, description, agency, agencyUrl, skills, url}) => (
+               <ProjectCard name={name} description={description} agency={agency} agencyUrl={agencyUrl} skills={skills} url={url}/>
+            ))
+        }
+
+    </div>
+</section>
+
+<style>
+    .projects {
+        margin-top: 32px;
+    }
+
+    .projects-title {
+        margin-bottom: 16px;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+</style>

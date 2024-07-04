@@ -1,0 +1,39 @@
+---
+
+const {institution, endDate, startDate, area} = Astro.props;
+
+---
+
+<div class="education-item">
+    <div class="education-item--left">
+        <p>{`• ${startDate}`}</p>
+        <p>-</p>
+        <p>{endDate}</p>
+    </div>
+    <div class="education-item--right">
+        <p class="institution">{`• ${institution}`}</p>
+        <p class="area">{`• ${area}`}</p>
+    </div>
+</div>
+
+<style>
+    .education-item {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    
+    .education-item--left {
+        display: flex;
+        gap: 4px;
+        width: 224px;
+    }
+
+    .institution {
+        color: var(--accent);
+    }
+
+    .area {
+        color: #B3B3B3;
+    }
+
+</style>

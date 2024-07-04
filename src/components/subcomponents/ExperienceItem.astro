@@ -1,0 +1,35 @@
+---
+
+const {startDate, endDate, name, position, url} = Astro.props;
+
+---
+
+<div class="experience-item">
+    <div class="experience-item--left">
+        <p>{`• ${startDate}`}</p>
+        <p>-</p>
+        <p>{endDate}</p>
+    </div>
+    <div class="experience-item--right">
+        <p class="company-link"><a href={url}>{`• ${name}`}</a></p>
+        <p class="position">{`• ${position}`}</p>
+    </div>
+</div>
+
+<style>
+    .experience-item {
+        display: flex;
+        /* justify-content: space-between; */
+    }
+    
+    .experience-item--left {
+        display: flex;
+        gap: 4px;
+        width: 224px;
+    }
+
+    .position {
+        color: #B3B3B3;
+    }
+
+</style>

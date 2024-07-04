@@ -1,0 +1,39 @@
+---
+
+const {skill, style} = Astro.props;
+
+---
+
+<span class=`skill-tag ${style}`>
+    {skill}
+</span>
+
+<style>
+    .skill-tag {
+        display: inline;       
+        background-color: var(--light-gray);
+        color: var(--title);
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 0.750rem;
+        font-weight: 600;
+        transition: 300ms;
+    }
+
+    .skill-tag:hover {
+        background-color: var(--accent);
+        color: var(--light);
+    }
+
+    .skill-regular {
+        color: var(--title);
+        font-weight: 600;
+        font-size: 0.875rem;
+    }
+
+    .skill-disabled {
+        color: #B3B3B3;
+        font-size: 0.875rem;
+    }
+
+</style>

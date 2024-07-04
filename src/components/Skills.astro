@@ -1,0 +1,48 @@
+---
+
+import {skills} from '@cv';
+import {learningSkills} from '@cv';
+import Tag from './subcomponents/Tag.astro';
+
+---
+
+<section class="skills">
+    <h3 class="skills-title">Habilidades</h3>
+    <div class="skills-container">
+        {
+            skills.map(skill => (
+                <Tag skill={skill} style={"skill-regular"}/>
+            ))
+        }
+    </div>
+    <h3 class="skills-subtitle">En formación</h3>
+    <div class="skills-container">
+        {
+            learningSkills.map(skill => (
+                <Tag skill={skill} style={"skill-disabled"}/>
+            ))
+        }
+    </div>
+
+</section>
+
+<style>
+    .skills {
+        margin-top: 32px;
+    }
+
+    .skills-title {
+        margin-bottom: 16px;
+    }
+
+    .skills-subtitle {
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .skills-container {
+        display: flex;
+        gap: 8px
+    }
+
+</style>

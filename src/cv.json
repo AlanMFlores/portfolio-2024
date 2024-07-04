@@ -1,0 +1,153 @@
+{
+    "basics": {
+      "name": "Alan Marcelo Flores",
+      "label": "Frontend Developer",
+      "image": "/public/profile.png",
+      "email": "john@gmail.com",
+      "phone": "(912) 555-4321",
+      "url": "https://johndoe.com",
+      "summary": "Soy Desarrollador Web especializado en el Frontend con un sólido criterio de diseño, actualmente en formación en Backend. Confío plenamente en la organización y la planeación de cada proyecto, y soy riguroso con la calidad del resultado final. Considero que la diferencia está en los detalles. Si tu forma de trabajar coincide con la mía, podemos hacerlo juntos. Hablemos.",
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "CA 94115",
+        "city": "San Francisco",
+        "countryCode": "US",
+        "region": "California"
+      },
+      "profiles": [{
+        "network": "Twitter",
+        "username": "john",
+        "url": "https://twitter.com/john"
+      }]
+    },
+    "work": [{
+      "name": "Allungata - Pizzería Artesanal",
+      "position": "Cofundador",
+      "url": "https://allungata.com.ar/",
+      "startDate": "Mar 2015",
+      "endDate": "Actualidad",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Background Research",
+      "position": "Desarrollador Frontend Freelance",
+      "url": "https://b-research.co/",
+      "startDate": "Dic 2023",
+      "endDate": "Actualidad",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Danila Digital",
+      "position": "Desarrollador WordPress Freelance",
+      "url": "https://daniladigital.com.ar/",
+      "startDate": "May 2015",
+      "endDate": "Actualidad",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    },
+    {
+      "name": "Agencia Lader",
+      "position": "Práctica Laboral. Desarrollador WordPress",
+      "url": "https://lader.com.ar/",
+      "startDate": "Feb 2024",
+      "endDate": "May 2024",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    }],
+    "education": [{
+      "institution": "Instituto Inmaculada Concepción de María",
+      "url": "",
+      "area": "Educación Secundaria Orientación en Perito Mercantil",
+      "startDate": "2010",
+      "endDate": "2014"
+    },
+    {
+      "institution": "Aprendizaje autodidacta",
+      "url": "",
+      "area": "Desarrollo Web en WordPress",
+      "startDate": "2020",
+      "endDate": "2021"
+    },
+    {
+      "institution": "Aprendizaje autodidacta",
+      "url": "",
+      "area": "Desarrollo Frontend en React",
+      "startDate": "2021",
+      "endDate": "2023"
+    }],
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Astro",
+        "SASS",
+        "Tailwind CSS",
+        "WordPress",
+        "Figma"
+    ],
+    "learningSkills": [
+        "PHP",
+        "SQL",
+        "MySQL",
+        "TypeScript"
+    ],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "OMA Concept",
+      "startDate": "Abril de 2024",
+      "endDate": "Mayo de 2024",
+      "description": "Sitio web e-commerce realizado como parte de la práctica laboral en la Agencia Lader.",
+      "agency": "Agencia Lader",
+      "agencyUrl": "https://lader.com.ar/",
+      "skills": ["WordPress"],
+      "url": "https://omaconcept.lader.com.ar/"
+    },
+    {
+      "name": "Native Up",
+      "startDate": "Mayo de 2024",
+      "endDate": "Junio de 2024",
+      "description": "Landing Page realizada para una empresa de doblaje y traducciones con Danila Digital.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "CSS"],
+      "url": "https://nativeupok.com/"
+    },
+    {
+      "name": "Allungata",
+      "startDate": "Diciembre de 2023",
+      "endDate": "Enero de 2024",
+      "description": "Landing page realizada para la pizzería artesanal Allungata, ubicada en Palermo.",
+      "agency": "Background Research",
+      "agencyUrl": "https://b-research.co/",
+      "skills": ["Astro", "CSS", "React", "Javascript"],
+      "url": "https://allungata.com.ar/"
+    },
+    {
+      "name": "Life Palermo",
+      "startDate": "Mayo de 2024",
+      "endDate": "Mayo de 2024",
+      "description": "Landing page realizada para el desarrollo inmobiliario de categoría, Life Palermo.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress"],
+      "url": "https://lifepalermo.ar/"
+    }]
+  }
