@@ -11,21 +11,22 @@ const {institution, endDate, startDate, area} = Astro.props;
         <p>{endDate}</p>
     </div>
     <div class="education-item--right">
-        <p class="institution">{`• ${institution}`}</p>
-        <p class="area">{`• ${area}`}</p>
+        <p class="institution">{`• ${area}`}</p>
+        <p class="area">{`• ${institution}`}</p>
     </div>
 </div>
 
 <style>
     .education-item {
         display: flex;
+        flex-direction: column;
         /* justify-content: space-between; */
     }
     
     .education-item--left {
         display: flex;
         gap: 4px;
-        width: 224px;
+        min-width: 160px;
     }
 
     .institution {
@@ -34,6 +35,12 @@ const {institution, endDate, startDate, area} = Astro.props;
 
     .area {
         color: #B3B3B3;
+    }
+
+    @media screen and (min-width: 600px) {
+        .education-item {
+            flex-direction: row;
+        }
     }
 
 </style>

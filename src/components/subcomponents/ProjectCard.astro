@@ -7,7 +7,7 @@ const {name, description, agency, agencyUrl, skills, url} = Astro.props;
 <div class="project-card">
     <h3 class="project-card--title">{name}</h3>
     <p class="project-card--description">{description}</p>
-    <a href={agencyUrl} class="project-card--agency">{agency}</a>
+    <a href={agencyUrl} class="project-card--agency" target="_blank">{agency}</a>
     <div class="skills">
         {
             skills.map((skill, index) => (
@@ -16,7 +16,7 @@ const {name, description, agency, agencyUrl, skills, url} = Astro.props;
         }
     </div>
     <span class="project-url">
-        <a href={url}>Ir al sitio</a>
+        <a href={url} target="_blank">Ir al sitio</a>
         <span>
             <img src="/public/arrow-up-right.svg" alt="">
         </span>
@@ -32,6 +32,11 @@ const {name, description, agency, agencyUrl, skills, url} = Astro.props;
         border: 1px solid var(--light-gray);
         padding: 16px;
         border-radius: 8px;
+        transition: 300ms;
+    }
+
+    .project-card:hover {
+        border: 1px solid var(--accent);
     }
 
     .skills {

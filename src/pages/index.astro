@@ -6,12 +6,15 @@ import Projects from '@/components/Projects.astro';
 import Experience from '@/components/Experience.astro';
 import Skills from '@/components/Skills.astro';
 import Education from '@/components/Education.astro';
-import Contact from '@/components/Contact.astro';
 import KeyboardManager from '@/components/KeyboardManager.astro'
+
+import {basics} from "@cv";
+
+const {name, label} = basics;
 
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title={`Portfolio de ${name} - ${label}`}>
 
 	<main>
 		<Header/>
@@ -20,7 +23,6 @@ import KeyboardManager from '@/components/KeyboardManager.astro'
 		<Experience/>
 		<Skills/>
 		<Education/>
-		<Contact/>
 	</main>
 
 	<KeyboardManager/>

@@ -3,21 +3,19 @@
       "name": "Alan Marcelo Flores",
       "label": "Frontend Developer",
       "image": "/public/profile.png",
-      "email": "john@gmail.com",
-      "phone": "(912) 555-4321",
-      "url": "https://johndoe.com",
+      "email": "alanmfloresdev@gmail.com",
+      "phone": "(54) 11 2792 8986",
+      "url": "https://alanmflores.online",
       "summary": "Soy Desarrollador Web especializado en el Frontend con un sólido criterio de diseño, actualmente en formación en Backend. Confío plenamente en la organización y la planeación de cada proyecto, y soy riguroso con la calidad del resultado final. Considero que la diferencia está en los detalles. Si tu forma de trabajar coincide con la mía, podemos hacerlo juntos. Hablemos.",
-      "location": {
-        "address": "2712 Broadway St",
-        "postalCode": "CA 94115",
-        "city": "San Francisco",
-        "countryCode": "US",
-        "region": "California"
-      },
       "profiles": [{
-        "network": "Twitter",
-        "username": "john",
-        "url": "https://twitter.com/john"
+        "network": "LinkedIn",
+        "username": "Alan Marcelo Flores",
+        "url": "https://www.linkedin.com/in/alanmflores/"
+      },
+      {
+        "network": "GitHub",
+        "username": "Alan Marcelo Flores",
+        "url": "https://github.com/alanmflores"
       }]
     },
     "work": [{
@@ -46,7 +44,7 @@
       "name": "Danila Digital",
       "position": "Desarrollador WordPress Freelance",
       "url": "https://daniladigital.com.ar/",
-      "startDate": "May 2015",
+      "startDate": "May 2024",
       "endDate": "Actualidad",
       "summary": "Description…",
       "highlights": [
@@ -94,6 +92,7 @@
         "SASS",
         "Tailwind CSS",
         "WordPress",
+        "Elementor",
         "Figma"
     ],
     "learningSkills": [
@@ -117,7 +116,7 @@
       "description": "Sitio web e-commerce realizado como parte de la práctica laboral en la Agencia Lader.",
       "agency": "Agencia Lader",
       "agencyUrl": "https://lader.com.ar/",
-      "skills": ["WordPress"],
+      "skills": ["WordPress", "Elementor"],
       "url": "https://omaconcept.lader.com.ar/"
     },
     {
@@ -127,7 +126,7 @@
       "description": "Landing Page realizada para una empresa de doblaje y traducciones con Danila Digital.",
       "agency": "Danila Digital",
       "agencyUrl": "https://daniladigital.com.ar/",
-      "skills": ["WordPress", "CSS"],
+      "skills": ["WordPress", "Elementor", "CSS"],
       "url": "https://nativeupok.com/"
     },
     {
@@ -147,7 +146,7 @@
       "description": "Landing page realizada para el desarrollo inmobiliario de categoría, Life Palermo.",
       "agency": "Danila Digital",
       "agencyUrl": "https://daniladigital.com.ar/",
-      "skills": ["WordPress"],
+      "skills": ["WordPress", "Elementor"],
       "url": "https://lifepalermo.ar/"
     }]
   }

@@ -2,8 +2,12 @@
 import {basics} from '@cv';
 import ContactButton from './subcomponents/ContactButton.astro';
 
-const {name, label, image} = basics;
+const {name, label, image, email, phone, profiles} = basics;
 
+const linkedInfo = profiles.find(({network}) => network === "LinkedIn");
+const linkedUrl = linkedInfo?.url;
+
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
 ---
 
 <header class="header">
@@ -12,14 +16,19 @@ const {name, label, image} = basics;
             <h1 class="header-title">{name}</h1>
             <p class="header-subtitle">{label}</p>
         </div>
-        <div class="contact-buttons">
-            <ContactButton type={"solid"} icon={"envelope"} link={"#"}/>
-            <ContactButton type={"solid"} icon={"phone"} link={"#"}/>
-            <ContactButton type={"brands"} icon={"github"} link={"#"}/>
-            <ContactButton type={"brands"} icon={"linkedin"} link={"#"}/>
+        <div class="contact-buttons no-print">
+            <ContactButton type={"solid"} icon={"envelope"} link={"mailto:alanmfloresdev@gmail.com"}/>
+            <ContactButton type={"solid"} icon={"phone"} link={"https://api.whatsapp.com/send/?phone=5491127928986&text&type=phone_number&app_absent=0"}/>
+            <ContactButton type={"brands"} icon={"github"} link={"https://github.com/alanmflores"}/>
+            <ContactButton type={"brands"} icon={"linkedin"} link={"https://www.linkedin.com/in/alanmflores/"}/>
+        </div>
+        <div class="contact-print print">
+            <p>
+                {printInfo}
+            </p>
         </div>
     </div>
-    <figure>
+    <figure class="header-image">
         <img src={image} alt="profile image">
     </figure>
 </header>
@@ -30,12 +39,35 @@ const {name, label, image} = basics;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-top: 32px;
+    }
+
+    .header-title {
+            font-size: 1.2rem;
+        }
+
+    .header-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .header-image {
+        width: 104px;
+        margin: 0;
+    }
+
+    .header-image img {
+        object-fit: cover;
+        width: 100%;
     }
 
     .contact-buttons {
         display: flex;
         align-items: center;
         gap: 8px;
+    }
+
+    .contact-print p {
+        font-weight: 600;
     }
 
     .header-left {
@@ -51,6 +83,20 @@ const {name, label, image} = basics;
 
     .header-left--info h1 {
         margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 600px) {
+        .header-image {
+            width: 176px;
+        }
+
+        .header-title {
+            font-size: 2rem;
+        }
+
+        .header-subtitle {
+            font-size: 1rem;
+        }
     }
 
 </style>
