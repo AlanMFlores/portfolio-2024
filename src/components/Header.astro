@@ -14,6 +14,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     <div class="header-left">
         <div class="header-left--info">
             <h1 class="header-title">{name}</h1>
+            <p class="header-location"><i class="fa-solid fa-location-dot"></i> Ciudad Autónoma de Buenos Aires, Argentina</p>
             <p class="header-subtitle">{label}</p>
         </div>
         <div class="contact-buttons no-print">
@@ -50,13 +51,20 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
         font-size: 0.8rem;
     }
 
+    .header-location {
+        font-size: 0.8rem;
+    }
+
     .header-image {
+        border-radius: 100%;
         width: 104px;
         margin: 0;
     }
 
     .header-image img {
+        border-radius: 100%;
         object-fit: cover;
+        height: 100%;
         width: 100%;
     }
 
@@ -88,6 +96,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
     @media screen and (min-width: 600px) {
         .header-image {
             width: 176px;
+            height: 176px;
         }
 
         .header-title {

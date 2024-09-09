@@ -26,6 +26,7 @@ const {name, description, agency, agencyUrl, skills, url} = Astro.props;
 <style>
     .project-card {
         display: flex;
+        position: relative;
         flex-direction: column;
         align-items: flex-start;
         gap: 8px;
@@ -41,6 +42,7 @@ const {name, description, agency, agencyUrl, skills, url} = Astro.props;
 
     .skills {
         display: flex;
+        flex-wrap: wrap;
         gap: 8px;
     }
 

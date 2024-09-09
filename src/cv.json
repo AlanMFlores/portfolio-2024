@@ -2,7 +2,7 @@
     "basics": {
       "name": "Alan Marcelo Flores",
       "label": "Frontend Developer",
-      "image": "profile.png",
+      "image": "profile.jpg",
       "email": "alanmfloresdev@gmail.com",
       "phone": "(54) 11 2792 8986",
       "url": "https://alanmflores.online",
@@ -41,22 +41,22 @@
       ]
     },
     {
-      "name": "Danila Digital",
-      "position": "Desarrollador WordPress Freelance",
-      "url": "https://daniladigital.com.ar/",
-      "startDate": "May 2024",
-      "endDate": "Actualidad",
+      "name": "Agencia Lader",
+      "position": "Práctica Laboral. Desarrollador WordPress",
+      "url": "https://lader.com.ar/",
+      "startDate": "Feb 2024",
+      "endDate": "May 2024",
       "summary": "Description…",
       "highlights": [
         "Started the company"
       ]
     },
     {
-      "name": "Agencia Lader",
-      "position": "Práctica Laboral. Desarrollador WordPress",
-      "url": "https://lader.com.ar/",
-      "startDate": "Feb 2024",
-      "endDate": "May 2024",
+      "name": "Danila Digital",
+      "position": "Desarrollador WordPress Freelance",
+      "url": "https://daniladigital.com.ar/",
+      "startDate": "May 2024",
+      "endDate": "Actualidad",
       "summary": "Description…",
       "highlights": [
         "Started the company"
@@ -98,8 +98,7 @@
     "learningSkills": [
         "PHP",
         "SQL",
-        "MySQL",
-        "TypeScript"
+        "MySQL"
     ],
     "languages": [{
       "language": "English",
@@ -116,18 +115,8 @@
       "description": "Sitio web e-commerce realizado como parte de la práctica laboral en la Agencia Lader.",
       "agency": "Agencia Lader",
       "agencyUrl": "https://lader.com.ar/",
-      "skills": ["WordPress", "Elementor"],
-      "url": "https://omaconcept.lader.com.ar/"
-    },
-    {
-      "name": "Native Up",
-      "startDate": "Mayo de 2024",
-      "endDate": "Junio de 2024",
-      "description": "Landing Page realizada para una empresa de doblaje y traducciones con Danila Digital.",
-      "agency": "Danila Digital",
-      "agencyUrl": "https://daniladigital.com.ar/",
-      "skills": ["WordPress", "Elementor", "CSS"],
-      "url": "https://nativeupok.com/"
+      "skills": ["WordPress", "WooCommerce", "Elementor", "CSS", "Javascript"],
+      "url": "https://omaconcept.com.ar/"
     },
     {
       "name": "Allungata",
@@ -140,6 +129,16 @@
       "url": "https://allungata.com.ar/"
     },
     {
+      "name": "Native Up",
+      "startDate": "Mayo de 2024",
+      "endDate": "Junio de 2024",
+      "description": "Landing Page realizada para una empresa de doblaje y traducciones con Danila Digital.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "Elementor", "CSS"],
+      "url": "https://nativeupok.com/"
+    },
+    {
       "name": "Life Palermo",
       "startDate": "Mayo de 2024",
       "endDate": "Mayo de 2024",
@@ -148,5 +147,25 @@
       "agencyUrl": "https://daniladigital.com.ar/",
       "skills": ["WordPress", "Elementor"],
       "url": "https://lifepalermo.ar/"
+    },
+    {
+      "name": "Jaym Besares",
+      "startDate": "Julio de 2024",
+      "endDate": "Julio de 2024",
+      "description": "Landing page realizada para un desarrollo inmobiliario en el barrio de Belgrano.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "Elementor", "CSS", "Javascript"],
+      "url": "https://jaymdesarrollos.com/near/"
+    },
+    {
+      "name": "Tienda Deco Nelly",
+      "startDate": "Julio de 2024",
+      "endDate": "Agosto de 2024",
+      "description": "Tienda online para una emprendedora que comercializa velas y productos aromáticos.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "WooCommerce", "Gutenberg", "CSS" ],
+      "url": "https://tiendadeconelly.com.ar/"
     }]
   }
