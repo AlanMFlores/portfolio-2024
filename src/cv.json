@@ -108,7 +108,18 @@
       "name": "Jane Doe",
       "reference": "Reference…"
     }],
-    "projects": [{
+    "projects": [
+    {
+      "name": "Programable: Videojuegos",
+      "startDate": "Septiembre de 2024",
+      "endDate": "Septiembre de 2024",
+      "description": "Landing page para cursos de programación de videojuegos para niños y adolescentes.",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "Figma", "Elementor", "CSS", "Javascript"],
+      "url": "https://programable.com.ar/videojuegos/"
+    },
+    {
       "name": "OMA Concept",
       "startDate": "Abril de 2024",
       "endDate": "Mayo de 2024",
@@ -117,6 +128,16 @@
       "agencyUrl": "https://lader.com.ar/",
       "skills": ["WordPress", "WooCommerce", "Elementor", "CSS", "Javascript"],
       "url": "https://omaconcept.com.ar/"
+    },
+    {
+      "name": "Arch360",
+      "startDate": "Julio de 2024",
+      "endDate": "Agosto de 2024",
+      "description": "Sitio web de noticias y artículos de blog de Arquitectura. By VASA",
+      "agency": "Danila Digital",
+      "agencyUrl": "https://daniladigital.com.ar/",
+      "skills": ["WordPress", "Elementor", "CSS", "Javascript"],
+      "url": "https://arch360.com.ar/"
     },
     {
       "name": "Allungata",
@@ -135,7 +156,7 @@
       "description": "Landing Page realizada para una empresa de doblaje y traducciones con Danila Digital.",
       "agency": "Danila Digital",
       "agencyUrl": "https://daniladigital.com.ar/",
-      "skills": ["WordPress", "Elementor", "CSS", "Figma"],
+      "skills": ["WordPress", "Figma", "Elementor", "CSS"],
       "url": "https://nativeupok.com/"
     },
     {
